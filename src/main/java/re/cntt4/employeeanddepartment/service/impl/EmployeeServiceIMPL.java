@@ -14,6 +14,11 @@ public class EmployeeServiceIMPL implements EmployeeService {
     private final EmployeeRepositor employeeRepositor;
 
     @Override
+    public void save(Employee employee) {
+        employeeRepositor.save(employee);
+    }
+
+    @Override
     public List<Employee> getAllEmployee() {
         return employeeRepositor.findAll();
     }

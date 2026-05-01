@@ -8,4 +8,5 @@ import java.util.List;
 
 public interface EmployeeService {
     public List<Employee> getAllEmployee();
+    void save(Employee employee);
 }

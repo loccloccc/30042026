@@ -18,6 +18,7 @@
         border-radius: 50%;
     }
 </style>
+<a th:href="@{/add}">Add</a>
 <table class="table table-striped table-inverse">
     <thead class="thead-inverse">
     <tr>
@@ -35,7 +36,7 @@
         <td th:text="${emp.name}"></td>
         <td th:text="${emp.age}"></td>
         <td>
-            <img th:src="${emp.avatar}" alt="" class="image">
+            <img th:src="@{${emp.avatar}}"  class="image">
         </td>
         <td th:text="${emp.status}"></td>
         <td th:text="${emp.department.name}"></td>
